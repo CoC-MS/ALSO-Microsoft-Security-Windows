@@ -1,6 +1,6 @@
 # 🛡️ ALSO Microsoft Security - Windows
 
-> A collection of Microsoft Intune policy exports and supporting artifacts designed to help partners accelerate secure, managed Windows endpoint deployments.
+> A collection of Microsoft Intune security policy exports and supporting artifacts designed to help partners accelerate secure, managed Windows deployments.
 >
 > **Works with Microsoft 365 Business Premium and higher licences, depending on the policy.**
 
@@ -191,6 +191,6 @@ to import the reviewed Intune exports.
 > restart behavior, update deadlines, and tenant-specific values that must be
 > reviewed and approved before assignment to the target environment.
 
-## Licence
+## 🔗 Source and licence
 
-The template and this repository are licensed under the [Apache License 2.0](LICENSE).
+The `Windows` exports are a snapshot; changes in the source template do not automatically update this repository. This repository is licensed under the [Apache License 2.0](LICENSE).
