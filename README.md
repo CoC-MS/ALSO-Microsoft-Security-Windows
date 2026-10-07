@@ -47,7 +47,7 @@ Cross-platform and tenant-wide supporting content is not included in this reposi
 | --- | --- |
 | **Device configuration and security** | Settings Catalog and Administrative Template exports, Defender controls, and device configuration policies. |
 | **Provisioning** | Autopilot profiles and Enrollment Status Page configurations. |
-| **Compliance and targeting** | Compliance policies, a compliance script, and Windows assignment filters in `Full`. |
+| **Compliance and targeting** | Defender for Endpoint compliance and device-risk policies, a compliance script, and Windows assignment filters in `Full`. |
 | **Updates** | Windows Update rings, driver update profiles, and a Hotpatch quality-update policy in `Full`. |
 | **Scripts and hardware** | Device Health Scripts, a PowerShell script, and Dell/HP BIOS-related artifacts, depending on the package. |
 | **Applications and prerequisites** | Company Portal and Microsoft 365 Apps exports, plus OneDrive and Windows ADMX exports in `Full`. |
