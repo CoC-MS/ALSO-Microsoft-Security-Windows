@@ -8,8 +8,8 @@
 | Resource | Description |
 | --- | --- |
 | 📦 **[Windows packages](Windows/Full/Config%20overview.md)** | Compare package scope and review package manifests. |
-| 🚀 **[General prerequisites](docs/public/general-prerequisites.md)** | Check licensing, permissions, and deployment preparation.|
-| 🪟 **[Windows prerequisites](docs/public/windows-prerequisites.md)** | Check Windows-specific deployment requirements.|
+| 🚀 **[General prerequisites](docs/public/general-prerequisites.md)** | Check licensing, permissions, and deployment preparation. |
+| 🪟 **[Windows prerequisites](docs/public/windows-prerequisites.md)** | Check Windows-specific deployment requirements. |
 | 📖 **[Policy naming](docs/public/policy-naming.md)** | Review the naming format and existing exceptions. |
 | 🏷️ **[Short-name exceptions](docs/public/short-name-exceptions.md)** | Understand why some exported resources use shorter names. |
 | 📂 **[File structure](docs/public/file-structure.md)** | Find package contents and understand the manifests. |
@@ -46,15 +46,23 @@ Cross-platform and tenant-wide supporting content is not included in this reposi
 
 | Area | Included content |
 | --- | --- |
-| **Device configuration and security** | Settings Catalog and Administrative Template exports, Defender controls, and device configuration policies. |
-| **Provisioning** | Autopilot profiles and Enrollment Status Page configurations. |
-| **Compliance and targeting** | Defender for Endpoint compliance and device-risk policies, a compliance script, and Windows assignment filters in `Full`. |
-| **Updates** | Windows Update rings, driver update profiles, and a Hotpatch quality-update policy in `Full`. |
-| **Scripts and hardware** | Device Health Scripts, a PowerShell script, and Dell/HP BIOS-related artifacts, depending on the package. |
-| **Applications and prerequisites** | Company Portal and Microsoft 365 Apps exports, plus OneDrive and Windows ADMX exports in `Full`. |
+| 🔒 **Device configuration and security** | Settings Catalog and Administrative Template exports, Defender controls, and device configuration policies. |
+| 🚚 **Provisioning** | Autopilot profiles and Enrollment Status Page configurations. |
+| ✅ **Compliance and targeting** | Defender for Endpoint compliance and device-risk policies, a compliance script, and Windows assignment filters in `Full`. |
+| 🔄 **Updates** | Windows Update rings, driver update profiles, and a Hotpatch quality-update policy in `Full`. |
+| 🩺 **Scripts and hardware** | Device Health Scripts, a PowerShell script, and Dell/HP BIOS-related artifacts, depending on the package. |
+| 🧩 **Applications and prerequisites** | Company Portal and Microsoft 365 Apps exports, plus OneDrive and Windows ADMX exports in `Full`. |
 
-Notable capabilities include scheduled restart and disk-cleanup settings, Windows Hotpatch prerequisites and update policy, and Defender/Secure Score detection and remediation scripts in advanced `E3-E5` and `E5` packages. Review user impact, device and service prerequisites, and licensing before deployment.
+### ✨ Notable capabilities
+
+- 🔁 **Scheduled restart and disk cleanup:** Scheduled reboot and disk-cleanup settings. Review their user impact before assignment.
+- 🔥 **Windows Hotpatch:** Hotpatch prerequisite settings, plus the Hotpatch quality-update policy in `Full`. Confirm device, service, and licence prerequisites before deployment.
+- 🛡️ **Defender and Secure Score remediations:** Paired detection and remediation scripts in the advanced `E3-E5` and `E5` packages.
 
 ---
 
-Start with [General prerequisites](docs/public/general-prerequisites.md) and [Windows prerequisites](docs/public/windows-prerequisites.md), choose a package using [File structure](docs/public/file-structure.md), then follow [How to import](docs/public/how-to-import.md).
+## 🚀 Getting started
+
+1. ✅ Review [General prerequisites](docs/public/general-prerequisites.md) and [Windows prerequisites](docs/public/windows-prerequisites.md).
+2. 📂 Choose a package using [File structure](docs/public/file-structure.md).
+3. 📥 Follow [How to import](docs/public/how-to-import.md).
