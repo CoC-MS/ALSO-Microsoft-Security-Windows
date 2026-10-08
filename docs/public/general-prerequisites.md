@@ -23,6 +23,18 @@ Review policy settings, descriptions, references, and assignments. Prepare tenan
 
 Cross-platform and tenant-wide shared dependencies are not included in this repository. Obtain only the dependencies required by the selected Windows policies.
 
+## ⚙️ General service settings
+
+Before deployment, confirm these general settings in the relevant portals. The portal menus can move; use the named setting on the page if your tenant shows a slightly different menu layout.
+
+| Portal | Configuration | Required value | Where to find it |
+| --- | --- | --- | --- |
+| Intune | Endpoint security profile setting | Allow | Intune admin center > **Endpoint security** > **Microsoft Defender for Endpoint**. Find **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations** under endpoint security configuration/profile settings. |
+| Intune | Connect Windows devices | On | Intune admin center > **Endpoint security** > **Microsoft Defender for Endpoint**. Under **Compliance policy evaluation**, find **Connect Windows devices to Microsoft Defender for Endpoint**. |
+| Intune | Windows diagnostic data features | Enabled and confirmed | Intune admin center > **Tenant administration** > **Connectors and tokens** > **Windows data**. Turn on **Enable features that require Windows diagnostic data in processor configuration** and **I confirm that my tenant owns one of these licenses**. See Microsoft's [Windows diagnostic data and license verification guide](https://learn.microsoft.com/en-us/intune/privacy/enable-windows-diagnostic-data). |
+| Intune | MDM user scope | All | Microsoft Entra admin center > **Identity** > **Mobility (MDM and MAM)** > **Microsoft Intune** > **MDM user scope**. Although listed here as an Intune prerequisite, this tenant-wide scope is configured in Entra. |
+| Entra | Local administrator setting | No | Microsoft Entra admin center > **Identity** > **Devices** > **Device settings** > **Local administrator settings**. Review the settings that add the Global Administrator role or the registering user as a local administrator during device join; set the relevant setting(s) to **No**. See Microsoft's [local administrator settings guide](https://learn.microsoft.com/en-us/entra/identity/devices/assign-local-admin). |
+
 ## 🧪 Deployment readiness
 
 Choose one package for the Windows platform. Prepare a pilot group and a way to validate deployment results and user impact before expanding assignments. Pay particular attention to restart behavior, update deadlines, security controls, and compliance actions.
