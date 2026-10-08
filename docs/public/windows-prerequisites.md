@@ -20,3 +20,11 @@ These settings are prerequisites for the Windows security configuration. Review 
 The **Microsoft Defender for Cloud Apps** switch enables integration with Defender for Endpoint for cloud app discovery (Shadow IT), including user and device context from endpoint network activity. Configure it manually in the Defender portal; the Windows packages do not contain exported Defender for Cloud Apps policies.
 
 Before enabling the integration, confirm a Microsoft Defender for Cloud Apps licence, Defender for Endpoint Plan 2 or Defender for Business, and devices onboarded to Defender for Endpoint. A package's licence label does not guarantee entitlement to Cloud Apps. See Microsoft's [Defender for Endpoint and Defender for Cloud Apps integration guide](https://learn.microsoft.com/en-us/defender-cloud-apps/mde-integration) for supported devices and full prerequisites. This integration is distinct from Defender Antivirus cloud-delivered protection and Microsoft Defender for Cloud.
+
+## Microsoft sources
+
+- [Configure advanced features in Microsoft Defender for Endpoint](https://learn.microsoft.com/en-us/defender-endpoint/advanced-features) — portal settings for Intune, Defender for Cloud Apps, Microsoft Purview, and EDR in block mode.
+- [Configure Microsoft Defender for Endpoint with Intune and onboard devices](https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/configure-integration) — connect the Defender and Intune services and configure device onboarding.
+- [Manage Microsoft Defender settings on devices that aren't enrolled with Intune](https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/security-settings-management) — Intune security settings management and its scope.
+- [Endpoint detection and response in block mode](https://learn.microsoft.com/en-us/defender-endpoint/edr-in-block-mode) — EDR in block mode behavior and prerequisites.
+- [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](https://learn.microsoft.com/en-us/defender-cloud-apps/mde-integration) — integration setup and prerequisites.
