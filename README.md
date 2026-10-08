@@ -8,7 +8,8 @@
 | Resource | Description |
 | --- | --- |
 | 📦 **[Windows packages](Windows/Full/Config%20overview.md)** | Compare package scope and review package manifests. |
-| 🚀 **[Prerequisites](docs/public/prerequisites.md)** | Check licensing, permissions, and deployment preparation. |
+| 🚀 **[General prerequisites](docs/public/general-prerequisites.md)** | Check licensing, permissions, and deployment preparation.|
+| 🪟 **[Windows prerequisites](docs/public/windows-prerequisites.md)** | Check Windows-specific deployment requirements.|
 | 📖 **[Policy naming](docs/public/policy-naming.md)** | Review the naming format and existing exceptions. |
 | 🏷️ **[Short-name exceptions](docs/public/short-name-exceptions.md)** | Understand why some exported resources use shorter names. |
 | 📂 **[File structure](docs/public/file-structure.md)** | Find package contents and understand the manifests. |
@@ -56,4 +57,4 @@ Notable capabilities include scheduled restart and disk-cleanup settings, Window
 
 ---
 
-Start with [Prerequisites](docs/public/prerequisites.md), choose a package using [File structure](docs/public/file-structure.md), then follow [How to import](docs/public/how-to-import.md).
+Start with [General prerequisites](docs/public/general-prerequisites.md) and [Windows prerequisites](docs/public/windows-prerequisites.md), choose a package using [File structure](docs/public/file-structure.md), then follow [How to import](docs/public/how-to-import.md).
