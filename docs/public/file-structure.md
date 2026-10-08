@@ -33,4 +33,4 @@ Browse the workloads under [`Windows/Full`](../../Windows/Full). Review the pack
 
 The Windows exports are a snapshot of [`out/Windows` in the source template](https://github.com/CoC-MS/also-security-template-internal/tree/3890f64350a5be655c1ca6f8dcc760171bebb985/out/Windows) at [revision `3890f64350a5be655c1ca6f8dcc760171bebb985`](https://github.com/CoC-MS/also-security-template-internal/commit/3890f64350a5be655c1ca6f8dcc760171bebb985). Changes to the source template do not automatically update this repository.
 
-See [Prerequisites](prerequisites.md) and [How to import](how-to-import.md) before deployment.
+See [General prerequisites](general-prerequisites.md), [Windows prerequisites](windows-prerequisites.md), and [How to import](how-to-import.md) before deployment.

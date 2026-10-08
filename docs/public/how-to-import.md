@@ -2,7 +2,7 @@
 
 [Public documentation](README.md)
 
-Complete the [Prerequisites](prerequisites.md) and review [File structure](file-structure.md) before importing.
+Complete the [General prerequisites](general-prerequisites.md) and review the [Windows prerequisites](windows-prerequisites.md) and [File structure](file-structure.md) before importing.
 
 Use the [Micke M Intune Management Tool](https://github.com/Micke-K/IntuneManagement) to import reviewed Intune exports. Follow the tool's current setup and authentication instructions.
 
