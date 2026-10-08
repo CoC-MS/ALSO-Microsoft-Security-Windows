@@ -2,7 +2,7 @@
 
 [Public documentation](README.md)
 
-Check these Windows-specific Microsoft Defender settings before deploying the Windows resources. In the Defender portal, the advanced-feature switches are under **System** > **Settings** > **Endpoints** > **General** > **Advanced features** (in some layouts: **Settings** > **Endpoints** > **Advanced features**). Turn on a switch and select **Save preferences**.
+Check these Windows-specific Microsoft Defender settings before deploying the Windows resources. In the [Defender portal](https://security.microsoft.com/), the advanced-feature switches are under **System** > **Settings** > **Endpoints** > **General** > **Advanced features** (in some layouts: **Settings** > **Endpoints** > **Advanced features**). Turn on a switch and select **Save preferences**.
 
 | Portal | Configuration | Required value | Where to find it |
 | --- | --- | --- | --- |
