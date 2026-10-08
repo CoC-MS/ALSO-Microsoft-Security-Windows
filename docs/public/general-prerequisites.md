@@ -40,3 +40,12 @@ Before deployment, confirm these general settings in the relevant portals. The p
 Choose one package for the Windows platform. Prepare a pilot group and a way to validate deployment results and user impact before expanding assignments. Pay particular attention to restart behavior, update deadlines, security controls, and compliance actions.
 
 See [File structure](file-structure.md) to compare package contents and [How to import](how-to-import.md) for the import sequence.
+
+## 📚 Microsoft sources
+
+Use Microsoft's documentation to confirm the requirements and current configuration steps for these Windows and tenant settings:
+
+- **Defender for Endpoint connection and endpoint security enforcement:** [Configure Microsoft Defender for Endpoint with Intune](https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/configure-integration) and [Integrate Microsoft Defender for Endpoint with Intune for device compliance](https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/overview).
+- **Windows diagnostic data features and licensing:** [Enable Windows diagnostic data in Intune](https://learn.microsoft.com/en-us/intune/privacy/enable-windows-diagnostic-data).
+- **Windows automatic enrollment and MDM user scope:** [Enable automatic MDM enrollment for Windows](https://learn.microsoft.com/en-us/intune/device-enrollment/windows/enable-automatic-mdm).
+- **Microsoft Entra local administrator settings:** [Manage local administrators on Microsoft Entra joined devices](https://learn.microsoft.com/en-us/entra/identity/devices/assign-local-admin).
