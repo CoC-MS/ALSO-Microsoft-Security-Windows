@@ -27,7 +27,7 @@ The **E5 folder** is intended for organizations that have access to the complete
 
 ---
 
-### ✅ Business Premium Folder (Limited Experience)
+### ✅ BP Folder (Limited Experience)
 
 The **Business Premium folder** is designed for organizations using Microsoft 365 Business Premium and other licenses with partial feature compatibility.
 
