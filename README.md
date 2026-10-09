@@ -23,17 +23,17 @@
 
 These are pre-generated Intune policy exports, not a Windows application or a build tool. Each package includes a `Config overview.md` and a `build-manifest.json` listing its exported resources. Manifest paths are relative to the package.
 
-| Package | Licence scope | Edition | Exported files |
+| Package | Licence scope | Edition | JSON files |
 | --- | --- | --- | ---: |
 | [BP-Basic](Windows/BP-Basic/Config%20overview.md) | 🏷️ **BP** | Basic | 74 |
 | [BP-Adv](Windows/BP-Adv/Config%20overview.md) | 🏷️ **BP** | Adv | 12 |
 | [E3-E5-Basic](Windows/E3-E5-Basic/Config%20overview.md) | 🏷️ **BP + E3-E5** | Basic | 76 |
-| [E3-E5-Adv](Windows/E3-E5-Adv/Config%20overview.md) | 🏷️ **BP + E3-E5** | Adv | 46 |
+| [E3-E5-Adv](Windows/E3-E5-Adv/Config%20overview.md) | 🏷️ **BP + E3-E5** | Adv | 24 |
 | [E5-Basic](Windows/E5-Basic/Config%20overview.md) | 🏷️ **BP + E3-E5 + E5** | Basic | 76 |
-| [E5-Adv](Windows/E5-Adv/Config%20overview.md) | 🏷️ **BP + E3-E5 + E5** | Adv | 50 |
-| [Full](Windows/Full/Config%20overview.md) | 🏷️ **All** | Full | 154 |
+| [E5-Adv](Windows/E5-Adv/Config%20overview.md) | 🏷️ **BP + E3-E5 + E5** | Adv | 26 |
+| [Full](Windows/Full/Config%20overview.md) | 🏷️ **All** | Full | 111 |
 
-Exported-file counts come from each package's manifest and include supporting scripts and artifacts, not just policies. They exclude the package overview and manifest.
+JSON-file counts include package JSON resources but exclude `build-manifest.json` and JSON files under `Applications` or `AssignmentFilters`. Non-JSON files such as `.ps1` and `.cctk` files are not counted.
 
 Licence builds are cumulative: `E3-E5` includes `BP`, and `E5` includes both `BP` and `E3-E5`. Basic and Adv are separate editions; **Adv is not an additional layer on top of Basic**. The `Full` package also includes Windows resources without tier or licence markers. Requirements vary by resource.
 
