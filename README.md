@@ -12,7 +12,7 @@
 
 ### ✅ E5 Folder (Full Experience)
 
-The **E5 folder** is intended for organizations that have access to the complete Microsoft Security stack used by these templates.
+The **E5 folder** is intended for organizations that have following licenses.
 
 | License | Supported |
 |----------|----------|
