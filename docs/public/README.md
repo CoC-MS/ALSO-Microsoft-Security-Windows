@@ -7,6 +7,7 @@ Partner-facing guidance for reviewing and deploying the Windows policy exports i
 
 | Page | Purpose |
 | --- | --- |
+| 🛡️ **[Repository overview](repository-overview.md)** | Understand the repository's purpose, scope, and package model. |
 | 🚀 **[General prerequisites](general-prerequisites.md)** | Check licensing, permissions, and deployment preparation. |
 | 🪟 **[Windows prerequisites](windows-prerequisites.md)** | Check Windows-specific deployment requirements. |
 | 📖 **[Policy naming](policy-naming.md)** | Understand the source naming convention and current names. |
@@ -17,4 +18,4 @@ Partner-facing guidance for reviewing and deploying the Windows policy exports i
 
 ---
 
-Start with [General prerequisites](general-prerequisites.md) and [Windows prerequisites](windows-prerequisites.md), then select a package using [File structure](file-structure.md) before following [How to import](how-to-import.md).
+Start with the [Repository overview](repository-overview.md), then review [General prerequisites](general-prerequisites.md) and [Windows prerequisites](windows-prerequisites.md). Select a package using [File structure](file-structure.md) before following [How to import](how-to-import.md).
