@@ -75,7 +75,7 @@ These are pre-generated Intune policy exports, not a Windows application or a bu
 | --- | --- | --- | ---: |
 | [BP](Windows/BP/Config%20overview.md) | 🏷️ **BP** | BP resources, regardless of Basic or Adv tier | 107 |
 | [E5](Windows/E5/Config%20overview.md) | 🏷️ **BP + E3-E5 + E5** | All licensed tiers through E5 | 147 |
-| [Full](Windows/Full/Config%20overview.md) | 🏷️ **All** | All Windows resources, plus Windows Server and Conditional Access resources | 177 |
+| [Full](Windows/Full/Config%20overview.md) | 🏷️ **All** | All Windows resources | 177 |
 
 Manifest counts include all listed resources, including supporting artifacts; the manifest and overview are not counted. Check the selected package manifest for its exact file list.
 
