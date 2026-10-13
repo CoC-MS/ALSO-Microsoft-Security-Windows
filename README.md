@@ -79,7 +79,6 @@ These are pre-generated Intune policy exports, not a Windows application or a bu
 
 Manifest counts include all listed resources, including supporting artifacts; the manifest and overview are not counted. Check the selected package manifest for its exact file list.
 
-The licence packages are cumulative: `E5` includes resources marked for `BP`, `E3-E5`, and `E5`; `BP` includes resources marked for `BP`. Basic and Adv are resource tiers within these packages, not separate packages. Requirements vary by resource.
 
 > [!WARNING]
 > Choose one Windows package per tenant: `BP`, `E5`, or `Full`. Do not combine packages or import `Full` after another package; Intune imports can create duplicate policies rather than reconcile packages. `Full` is not a guarantee that every resource is suitable for every tenant or covered by its licences.
