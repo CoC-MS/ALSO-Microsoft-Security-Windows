@@ -70,7 +70,7 @@ All other Defender-related configurations may require additional licensing.
 ## 📦 Windows configuration packages
 
 Each package includes a `Config overview.md` and a `build-manifest.json` listing its exported resources. Manifest paths are relative to the package.
-You can use there to get a overview quickly.
+You can use these files to get a overview quickly.
 
 | Package | Licence scope | Scope | Resources in manifest |
 | --- | --- | --- | ---: |
