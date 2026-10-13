@@ -11,7 +11,7 @@ Check these items before importing Windows resources into Microsoft Intune.
 
 ## 🔐 Licensing and platform
 
-The repository provides `BP`, `E5`, and `Full` packages. `BP` includes resources marked for BP; `E5` includes resources marked for BP, E3-E5, or E5. Basic and Adv are tiers within these packages, not separate package choices. Confirm the required licences and service availability for every policy you intend to use.
+The repository provides `BP`, `E5`, and `Full` packages. `BP` includes resources marked for BP; `E5` includes resources marked for BP & E5 Confirm the required licences and service availability for every policy you intend to use.
 
 Check the Windows version, device join/enrollment state, and management scenario required by the selected settings. Review package overviews and manifests to understand each package's scope.
 
