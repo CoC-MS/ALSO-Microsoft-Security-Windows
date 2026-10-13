@@ -1,0 +1,31 @@
+{
+  "TenantId": "044c9c57-65ae-4850-aa00-ff92281f867c",
+  "Objects": [
+    {
+      "DisplayName": "ALSO-CA-BSAccounts- Exclude",
+      "Id": "57802f85-25a5-4c18-8bbb-a997259455a0",
+      "Type": "Group"
+    },
+    {
+      "DisplayName": "BP-ALSO-CA107-Admins-AllApps-Windows-Grant-RequireCompliantDevice - Exclude",
+      "Id": "633c497f-4a0b-4ff6-96e5-b7202095f714",
+      "Type": "Group"
+    },
+    {
+      "DisplayName": "ALSO- All Internals",
+      "Id": "f0dcac6d-3f42-4627-8b8f-56a57f708f22",
+      "Type": "Group"
+    },
+    {
+      "DisplayName": "BP-ALSO-CA202-Internals-AllApps-UnmanagedWindowsAndMacOs-Grant-RequireSigninFrequency12H- Exclude",
+      "Id": "a17ab193-9ce3-4d1b-b8c1-081133da29af",
+      "Type": "Group"
+    },
+    {
+      "DisplayName": "BP-ALSO-CA205-Internals-AllApps-Windows-Grant-RequireCompliantDevice - Exclude",
+      "Id": "8baec328-5076-4e0c-bc13-6b9881998c21",
+      "Type": "Group"
+    }
+  ],
+  "Organization": "Vlads Demo tenant"
+}
