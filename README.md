@@ -84,7 +84,7 @@ Manifest counts include all listed resources, including supporting artifacts; th
 > [!WARNING]
 > Choose one Windows package per tenant: `BP`, `E5`, or `Full`. Do not combine packages or import `Full` after another package; Intune imports can create duplicate policies rather than reconcile packages. `Full` is not a guarantee that every resource is suitable for every tenant or covered by its licences.
 
-The `BP` and `E5` packages include their scoped Windows-targeted Conditional Access policies and supporting groups. `Full` includes the complete set of these resources, named locations, and a migration table, along with separate Windows Server policies. Review these tenant-specific resources and their dependencies before import. Other cross-platform shared content is outside this repository's scope.
+The `BP` and `E5` packages include their scoped Windows-targeted Conditional Access policies and supporting groups. `Full` includes the complete set of these resources, named locations, and a migration table. Review these tenant-specific resources and their dependencies before import. Other cross-platform shared content is outside this repository's scope.
 
 ## 🌐 Windows coverage
 
