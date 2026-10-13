@@ -71,31 +71,27 @@ All other Defender-related configurations may require additional licensing.
 
 These are pre-generated Intune policy exports, not a Windows application or a build tool. Each package includes a `Config overview.md` and a `build-manifest.json` listing its exported resources. Manifest paths are relative to the package.
 
-| Package | Licence scope | Edition | JSON files |
+| Package | Licence scope | Scope | Resources in manifest |
 | --- | --- | --- | ---: |
-| [BP-Basic](Windows/BP-Basic/Config%20overview.md) | 🏷️ **BP** | Basic | 74 |
-| [BP-Adv](Windows/BP-Adv/Config%20overview.md) | 🏷️ **BP** | Adv | 12 |
-| [E3-E5-Basic](Windows/E3-E5-Basic/Config%20overview.md) | 🏷️ **BP + E3-E5** | Basic | 76 |
-| [E3-E5-Adv](Windows/E3-E5-Adv/Config%20overview.md) | 🏷️ **BP + E3-E5** | Adv | 24 |
-| [E5-Basic](Windows/E5-Basic/Config%20overview.md) | 🏷️ **BP + E3-E5 + E5** | Basic | 76 |
-| [E5-Adv](Windows/E5-Adv/Config%20overview.md) | 🏷️ **BP + E3-E5 + E5** | Adv | 26 |
-| [Full](Windows/Full/Config%20overview.md) | 🏷️ **All** | Full | 111 |
+| [BP](Windows/BP/Config%20overview.md) | 🏷️ **BP** | BP resources, regardless of Basic or Adv tier | 107 |
+| [E5](Windows/E5/Config%20overview.md) | 🏷️ **BP + E3-E5 + E5** | All licensed tiers through E5 | 147 |
+| [Full](Windows/Full/Config%20overview.md) | 🏷️ **All** | All Windows resources, plus Windows Server and Conditional Access resources | 177 |
 
-JSON-file counts include package JSON resources but exclude `build-manifest.json` and JSON files under `Applications` or `AssignmentFilters`. Non-JSON files such as `.ps1` and `.cctk` files are not counted.
+Manifest counts include all listed resources, including supporting artifacts; the manifest and overview are not counted. Check the selected package manifest for its exact file list.
 
-Licence builds are cumulative: `E3-E5` includes `BP`, and `E5` includes both `BP` and `E3-E5`. Basic and Adv are separate editions; **Adv is not an additional layer on top of Basic**. The `Full` package also includes Windows resources without tier or licence markers. Requirements vary by resource.
+The licence packages are cumulative: `E5` includes resources marked for `BP`, `E3-E5`, and `E5`; `BP` includes resources marked for `BP`. Basic and Adv are resource tiers within these packages, not separate packages. Requirements vary by resource.
 
 > [!WARNING]
-> Choose one Windows package per tenant. Do not combine Basic, Adv, and Full packages or import Full after another package; Intune imports can create duplicate policies rather than reconcile packages. Full contains all Windows resources in this repository, not a guarantee that every resource is suitable for every tenant or covered by its licences.
+> Choose one Windows package per tenant: `BP`, `E5`, or `Full`. Do not combine packages or import `Full` after another package; Intune imports can create duplicate policies rather than reconcile packages. `Full` is not a guarantee that every resource is suitable for every tenant or covered by its licences.
 
-Cross-platform and tenant-wide supporting content is not included in this repository. Review dependencies and import only the resources required by the selected policies. Windows Server policies and other operating systems are outside this repository's scope.
+The `BP` and `E5` packages include their scoped Windows-targeted Conditional Access policies and supporting groups. `Full` includes the complete set of these resources, named locations, and a migration table, along with separate Windows Server policies. Review these tenant-specific resources and their dependencies before import. Other cross-platform shared content is outside this repository's scope.
 
 ## 🌐 Windows coverage
 
 | Area | Included content |
 | --- | --- |
 | 🔒 **Device configuration and security** | Settings Catalog and Administrative Template exports, Defender controls, and device configuration policies. |
-| 🛡️ **Attack surface reduction (ASR)** | Audit-mode and block-mode rule profiles in Basic packages and `Full`, including low-impact, Office-focused, and L2 rule sets. |
+| 🛡️ **Attack surface reduction (ASR)** | Audit-mode and block-mode rule profiles in the `BP`, `E5`, and `Full` packages, including low-impact, Office-focused, and L2 rule sets. |
 | ☁️ **Defender for Cloud Apps integration** | [Windows prerequisite guidance](docs/public/windows-prerequisites.md) for enabling the Defender for Endpoint integration in the Defender portal. This is a manual service setting, not an exported Cloud Apps policy. |
 | 🚚 **Provisioning** | Autopilot profiles and Enrollment Status Page configurations. |
 | ✅ **Compliance and targeting** | Defender for Endpoint compliance and device-risk policies, a compliance script, and Windows assignment filters in `Full`. |
@@ -107,13 +103,13 @@ Cross-platform and tenant-wide supporting content is not included in this reposi
 
 - 🛡️ **ASR audit and enforcement:** Profiles for assessing rule impact in audit mode and blocking risky behaviors, including Office-focused rules. Select the intended rule set and resolve overlapping settings before assignment.
 - ☁️ **Cloud app discovery:** Defender for Endpoint integration with Defender for Cloud Apps supports Shadow IT discovery with user and device context. Configure the portal setting and confirm licensing and onboarding using [Windows prerequisites](docs/public/windows-prerequisites.md).
-- 🔐 **Disk encryption and local administrator protection:** BitLocker OS-disk encryption and Windows LAPS settings in Basic packages and `Full`, including a separate Windows 11 24H2+ LAPS profile with automatic account management.
-- 🔑 **Windows Hello for Business:** Hello configuration in Basic packages, plus passwordless and Cloud Kerberos Trust settings in Adv packages; `Full` includes both. Cloud Kerberos Trust requires separate identity-side setup.
-- 🧱 **Application and credential protection:** App Control for Business (WDAC) settings for Microsoft and Intune-deployed apps in Adv packages, plus Device Guard, Credential Guard, and HVCI settings in `E3-E5-Adv` and `E5-Adv`; these are also in `Full`. Review application compatibility, hardware requirements, and reboot impact.
-- 🎣 **Enhanced Phishing Protection:** Settings for malicious-site, password-reuse, and unsafe password-storage warnings in Basic packages and `Full`. Confirm supported Windows versions and sign-in scenarios.
+- 🔐 **Disk encryption and local administrator protection:** BitLocker OS-disk encryption and Windows LAPS settings in the `BP`, `E5`, and `Full` packages, including a separate Windows 11 24H2+ LAPS profile with automatic account management.
+- 🔑 **Windows Hello for Business:** Hello, passwordless, and Cloud Kerberos Trust settings in the `BP`, `E5`, and `Full` packages. Cloud Kerberos Trust requires separate identity-side setup.
+- 🧱 **Application and credential protection:** App Control for Business (WDAC) settings for Microsoft and Intune-deployed apps in `BP`, `E5`, and `Full`, plus Device Guard, Credential Guard, and HVCI settings in `E5` and `Full`. Review application compatibility, hardware requirements, and reboot impact.
+- 🎣 **Enhanced Phishing Protection:** Settings for malicious-site, password-reuse, and unsafe password-storage warnings in the `BP`, `E5`, and `Full` packages. Confirm supported Windows versions and sign-in scenarios.
 - 🔁 **Scheduled restart and disk cleanup:** Scheduled reboot and disk-cleanup settings. Review their user impact before assignment.
 - 🔥 **Windows Hotpatch:** Hotpatch prerequisite settings, plus the Hotpatch quality-update policy in `Full`. Confirm device, service, and licence prerequisites before deployment.
-- 🛡️ **Defender and Secure Score remediations:** Paired detection and remediation scripts in the advanced `E3-E5` and `E5` packages.
+- 🛡️ **Defender and Secure Score remediations:** Paired detection and remediation scripts in the `E5` and `Full` packages.
 
 ---
 

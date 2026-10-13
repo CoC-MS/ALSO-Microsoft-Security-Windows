@@ -20,7 +20,7 @@ The collection contains ready-made setting files and supporting materials for se
 - **Keeping devices current:** update settings and checks that help an IT team see whether devices meet selected requirements.
 - **Additional management tools:** scripts and hardware-related settings for certain maintenance and device-management tasks.
 
-The settings are grouped into packages for different Microsoft licence plans and levels of coverage. The names **BP**, **E3-E5**, **E5**, **Basic**, **Adv**, and **Full** help distinguish those packages; they are not instructions to install every package. The [package guide](file-structure.md) explains the differences and helps your IT team choose one.
+The settings are grouped into **BP**, **E5**, and **Full** packages. The first two group resources by licence scope; Basic and Adv identify resource tiers within them. The [package guide](file-structure.md) explains the differences and helps your IT team choose one package.
 
 ## Who is it for?
 
@@ -30,7 +30,7 @@ This collection is intended for organizations that manage Windows computers with
 
 These files are not a program to run, and they do not automatically protect a computer. An IT administrator uses Intune to review and apply selected settings. Some settings depend on the organization's Microsoft licences, existing setup, and security needs; a setting that is right for one organization may not be right for another. Review and test changes on a small group of devices before wider use.
 
-This collection covers Windows computers, not Windows Server or other operating systems. It is a snapshot of recommendations, so updates to the original source do not automatically appear here.
+The packages focus on Windows computers. The licence packages include scoped Windows-targeted Conditional Access resources and supporting groups. `Full` also contains the complete set of these resources, named locations, a migration table, and separate Windows Server policies; review their scope and tenant-specific values before import. It is a snapshot of recommendations, so updates to the original source do not automatically appear here.
 
 ## Getting started
 

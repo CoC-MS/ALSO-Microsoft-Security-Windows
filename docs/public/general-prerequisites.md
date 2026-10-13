@@ -11,7 +11,7 @@ Check these items before importing Windows resources into Microsoft Intune.
 
 ## 🔐 Licensing and platform
 
-The repository provides `BP`, `E3-E5`, and `E5` Basic packages, plus matching Adv package names. Licence builds are cumulative; confirm the required licences and service availability for every policy you intend to use.
+The repository provides `BP`, `E5`, and `Full` packages. `BP` includes resources marked for BP; `E5` includes resources marked for BP, E3-E5, or E5. Basic and Adv are tiers within these packages, not separate package choices. Confirm the required licences and service availability for every policy you intend to use.
 
 Check the Windows version, device join/enrollment state, and management scenario required by the selected settings. Review package overviews and manifests to understand each package's scope.
 
@@ -21,7 +21,7 @@ Use an account with the Intune permissions needed to import and manage the selec
 
 Review policy settings, descriptions, references, and assignments. Prepare tenant-specific groups, filters, applications, and service dependencies where required. Import the OneDrive and Windows ADMX files before dependent Administrative Template policies; these files are in `Windows/Full/ADMXFiles`. The OneDrive ShortPath template requires those ADMX prerequisites and configuration for the intended OneDrive folder path.
 
-Cross-platform and tenant-wide shared dependencies are not included in this repository. Obtain only the dependencies required by the selected Windows policies.
+The licence packages include their scoped Windows-targeted Conditional Access policies and supporting groups. `Full` includes the complete set of these resources, named locations, a migration table, and separate Windows Server policies; review tenant-specific resources and dependencies before import. Other cross-platform shared dependencies are not included in this repository.
 
 ## ⚙️ General service settings
 
