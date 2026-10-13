@@ -69,7 +69,8 @@ All other Defender-related configurations may require additional licensing.
 
 ## 📦 Windows configuration packages
 
-These are pre-generated Intune policy exports, not a Windows application or a build tool. Each package includes a `Config overview.md` and a `build-manifest.json` listing its exported resources. Manifest paths are relative to the package.
+Each package includes a `Config overview.md` and a `build-manifest.json` listing its exported resources. Manifest paths are relative to the package.
+You can use there to get a overview quickly.
 
 | Package | Licence scope | Scope | Resources in manifest |
 | --- | --- | --- | ---: |
