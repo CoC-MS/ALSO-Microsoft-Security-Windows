@@ -27,6 +27,6 @@ The `Full` package currently contains these workload folders:
 
 Browse the workloads under [`Windows/Full`](../../Windows/Full). The package includes Windows-targeted Conditional Access policies with supporting groups and named locations, a migration table, and separate Windows Server policies. Review tenant-specific values and dependencies before import. Other cross-platform shared resources are not included.
 
-The Windows packages are a snapshot of [`packages/Windows` in the source template](https://github.com/CoC-MS/also-security-template-internal/tree/c1fbde7485a32b13a1684658de2f1e68bb571348/packages/Windows) at [revision `c1fbde7485a32b13a1684658de2f1e68bb571348`](https://github.com/CoC-MS/also-security-template-internal/commit/c1fbde7485a32b13a1684658de2f1e68bb571348). Changes to the source template do not automatically update this repository.
+
 
 See [General prerequisites](general-prerequisites.md), [Windows prerequisites](windows-prerequisites.md), and [How to import](how-to-import.md) before deployment.
