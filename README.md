@@ -42,7 +42,7 @@ The **Business Premium folder** is designed for organizations using Microsoft 36
 
 For Microsoft 365 F3, only the following Microsoft Defender security settings are supported:
 
-- Defender Antivirus
+- Defender Antimalware
 - Microsoft Defender Firewall
 - Exploit Guard
 - Credential Guard
