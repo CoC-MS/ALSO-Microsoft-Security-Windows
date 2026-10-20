@@ -2,12 +2,6 @@
 
 [Public documentation](README.md)
 
-**Disclaimer:** Licensing prerequisites and feature availability listed on this page may be incorrect, incomplete, or outdated. We strongly recommend verifying all licensing information against the latest official Microsoft licensing documentation before making any purchasing or deployment decisions.
-
-**Enterprise licenses:** [Microsoft Enterprise Plan Comparison](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/Modern-Work-Plan-Comparison-Enterprise.pdf)
-
-**SMB licenses:** [Microsoft SMB Plan Comparison](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/Modern-Work-Plan-Comparison-Enterprise.pdf)
-
 Check these Windows-specific Microsoft Defender settings before deploying the Windows resources. In the [Defender portal](https://security.microsoft.com/), the advanced-feature switches are under **System** > **Settings** > **Endpoints** > **General** > **Advanced features** (in some layouts: **Settings** > **Endpoints** > **Advanced features**). Turn on a switch and select **Save preferences**.
 
 | Portal | Configuration | Required value | Where to find it |
@@ -34,3 +28,9 @@ Before enabling the integration, confirm a Microsoft Defender for Cloud Apps lic
 - [Manage Microsoft Defender settings on devices that aren't enrolled with Intune](https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/security-settings-management) — Intune security settings management and its scope.
 - [Endpoint detection and response in block mode](https://learn.microsoft.com/en-us/defender-endpoint/edr-in-block-mode) — EDR in block mode behavior and prerequisites.
 - [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](https://learn.microsoft.com/en-us/defender-cloud-apps/mde-integration) — integration setup and prerequisites.
+
+**Disclaimer:** Licensing prerequisites and feature availability listed on this page may be incorrect, incomplete, or outdated. We strongly recommend verifying all licensing information against the latest official Microsoft licensing documentation before making any purchasing or deployment decisions.
+
+**Enterprise licenses:** [Microsoft Enterprise Plan Comparison](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/Modern-Work-Plan-Comparison-Enterprise.pdf)
+
+**SMB licenses:** [Microsoft SMB Plan Comparison](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/Modern-Work-Plan-Comparison-Enterprise.pdf)
