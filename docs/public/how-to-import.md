@@ -1,7 +1,7 @@
 
 
 https://github.com/user-attachments/assets/524c9224-fedf-45b6-a9d1-462480dd0b82
-# The video shows the Windows repository, same logic applies to this
+
 
 # 📥 How to import
 
