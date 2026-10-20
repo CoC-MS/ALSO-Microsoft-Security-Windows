@@ -2,6 +2,8 @@
 
 [Public documentation](README.md)
 
+**Disclaimer:** Licensing prerequisites and feature availability listed on this page may be incorrect, incomplete, or outdated. We strongly recommend verifying all licensing information against the latest official Microsoft licensing documentation before making any purchasing or deployment decisions.
+
 Check these Windows-specific Microsoft Defender settings before deploying the Windows resources. In the [Defender portal](https://security.microsoft.com/), the advanced-feature switches are under **System** > **Settings** > **Endpoints** > **General** > **Advanced features** (in some layouts: **Settings** > **Endpoints** > **Advanced features**). Turn on a switch and select **Save preferences**.
 
 | Portal | Configuration | Required value | Where to find it |
