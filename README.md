@@ -81,6 +81,15 @@ All other Defender-related configurations may require additional licensing.
 
 > **Important:** Microsoft 365 F1 supports deployment of Intune configuration settings only. Microsoft Defender security policy settings included in this repository are not supported with F1 licensing.
 
+#### Sensitivity-labeling availability
+
+Sensitivity labeling has limited included functionality across licenses:
+
+- **Microsoft 365 Business Premium:** Manual, default, and mandatory sensitivity labeling in Microsoft 365 apps only.
+- **Microsoft 365 E3:** Manual, default, and mandatory sensitivity labeling in Microsoft 365 apps, plus sensitivity labeling for containers in Microsoft 365.
+- **Microsoft 365 F3:** Same sensitivity-labeling capabilities as Microsoft 365 E3.
+- **Microsoft 365 F1:** No sensitivity-labeling capabilities are included; a Microsoft Purview Suite add-on is required to use them.
+
 **Disclaimer:** Licensing prerequisites and feature availability listed on this page may be incorrect, incomplete, or outdated. We strongly recommend verifying all licensing information against the latest official Microsoft licensing documentation before making any purchasing or deployment decisions.
 
 **Enterprise licenses:** [Microsoft Enterprise Plan Comparison](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/Modern-Work-Plan-Comparison-Enterprise.pdf)
