@@ -40,7 +40,7 @@ For controlled rollouts, we recommend using Microsoft's [deployment plans](https
 
 ### ✅ E5 Folder (Full Experience)
 
-The **E5 folder** is intended for organizations that have following licenses.
+The **E5 folder** is intended for organizations that have the following licenses.
 
 | License | Supported |
 |----------|----------|
